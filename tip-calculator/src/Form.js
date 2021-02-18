@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import SelectService from './SelectService'
 import LabelInput from './LabelInput'
 
@@ -9,17 +9,19 @@ const TipForm = () => {
   const [numberOfPeople, setNumberOfPeople] = useState(null)
   return (
     <form>
-      <LabelInput 
-        label="How much was your bill?" 
+      <LabelInput
+        label="How much was your bill?"
         type="number"
         value={bill}
       />
-      <SelectService label="How much was your bill?"/>
-      <LabelInput 
-        label="How many people are sharing the bill?" 
+      <SelectService
+        label="How much was your bill?"
+      />
+      <LabelInput
+        label="How many people are sharing the bill?"
         type="number"
         value={numberOfPeople}
-      />  
+      />
       <button>Calculate</button>
     </form>
   )
